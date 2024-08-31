@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>
+    <link rel="stylesheet" href="bingo.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="historial-container">
+      <button id="boton-historial" onclick="toggleHistorial()">BOLAS</button>
+      <div id="historial-bolas" class="oculto"></div>
+    </div>
+    <div class="container">
+      <div class="column">
+        <button class="bingo">B</button>
+        <button id="boton1"></button>
+        <button id="boton2"></button>
+        <button id="boton3"></button>
+        <button id="boton4"></button>
+        <button id="boton5"></button>
+      </div>
+      <div class="column">
+        <button class="bingo">I</button>
+        <button id="boton6"></button>
+        <button id="boton7"></button>
+        <button id="boton8"></button>
+        <button id="boton9"></button>
+        <button id="boton10"></button>
+      </div>
+      <div class="column">
+        <button class="bingo">N</button>
+        <button id="boton11"></button>
+        <button id="boton12"></button>
+        <button>😎</button>
+        <button id="boton14"></button>
+        <button id="boton15"></button>
+      </div>
+      <div class="column">
+        <button class="bingo">G</button>
+        <button id="boton16"></button>
+        <button id="boton17"></button>
+        <button id="boton18"></button>
+        <button id="boton19"></button>
+        <button id="boton20"></button>
+      </div>
+      <div class="column">
+        <button class="bingo">O</button>
+        <button id="boton21"></button>
+        <button id="boton22"></button>
+        <button id="boton23"></button>
+        <button id="boton24"></button>
+        <button id="boton25"></button>
+      </div>
+    </div>
+    <button id="boton-play" onclick="inicializar()">
+      <i class="bx bx-play-circle"></i>
+    </button>
+    <div>Crear otro cartón</div>
+    <div id="bola-bingo"></div>
+    <button id="boton-bola" onclick="generarBola()">Generar Bola</button>
+    <div id="pregunta-container" class="oculto">
+      <p>¿El número está?</p>
+      <button onclick="confirmarNumero(true)">Sí</button>
+      <button onclick="confirmarNumero(false)">No</button>
+    </div>
+    <div id="celebracion" class="oculto">🎉 ¡Felicidades! 🎉</div>
+    <script src="bingo.js"></script>
+  </body>
+</html>
